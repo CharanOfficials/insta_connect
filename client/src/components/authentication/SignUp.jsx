@@ -109,6 +109,7 @@ const SignUp = () => {
         })
           .then((res) => res.json())
           .then((data) => {
+            console.log("dw,jkqbdjqwbjd", data)
             setProfilePic(data.url.toString());
             setLoading(false);
           })
@@ -118,7 +119,7 @@ const SignUp = () => {
           });
       } else {
         toast({
-          title: "Please select an image.",
+          title: "Please select JPEG/ PNG image.",
           status: "warning",
           duration: 5000,
           isClosable: true,

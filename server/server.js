@@ -90,7 +90,7 @@ app.use("/", router);
 app.use(error.errorHandler);
 app.use(error.notFound);
 // enabling PORT
-const PORT = process.env.PORT || 2023;
+const PORT = process.env.PORT || 2024;
 // Setting up the server
 app.listen(PORT, () => {
   connectUsingMongoose();
